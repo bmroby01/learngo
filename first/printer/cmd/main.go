@@ -1,7 +1,11 @@
 package main
 
-import "learngo/first/printer"
+import (
+	newpackage "learngo/first/newPackage"
+	"learngo/first/printer"
+)
 
 func main() {
 	printer.Hello()
+	newpackage.Version()
 }
