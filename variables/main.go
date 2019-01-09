@@ -175,4 +175,90 @@ func main() {
 
 	// DO NOT TOUCH THIS
 	fmt.Println(lang, "version", version)
+
+	// EXERCISE: Multi Assign #2
+	//
+	//  1. Assign the correct values to the variables
+	//     to match to the EXPECTED OUTPUT below
+	//
+	//  2. Print the variables
+	//
+	// HINT
+	//  Use multiple Println calls to print each sentence.
+	//
+	// EXPECTED OUTPUT
+	//  Air is good on Mars
+	//  It's true
+	//  It is 19.5 degrees
+	// ---------------------------------------------------------
+
+	// UNCOMMENT THE CODE BELOW:
+
+	var (
+		planet string
+		isTrue bool
+		temp   float64
+	)
+
+	// ADD YOUR CODE BELOW
+	planet, isTrue, temp = "Mars", true, 19.5
+
+	fmt.Println("Air is good on " + planet)
+	fmt.Println("It's", isTrue)
+	fmt.Println("It is", temp, "degrees")
+
+	// EXERCISE: Multi Short Func
+	//
+	// 	1. Declare two variables using multiple short declaration syntax
+	//
+	//  2. Initialize the variables using `multi` function below
+	//
+	//  3. Discard the 1st variable's value in the declaration
+	//
+	//  4. Print only the 2nd variable
+	//
+	// NOTE
+	//  You should use `multi` function
+	//  while initializing the variables
+	//
+	// EXPECTED OUTPUT
+	//  4
+	// ---------------------------------------------------------
+
+	// ADD YOUR DECLARATIONS HERE
+	//
+	_, b := multi()
+
+	// THEN UNCOMMENT THE CODE BELOW
+
+	fmt.Println(b)
+
+	// EXERCISE: Swapper
+	//
+	//  1. Change `color` to "orange"
+	//     and `color2` to "green" at the same time
+	//
+	//     (use multiple-assignment)
+	//
+	//  2. Print the variables
+	//
+	// EXPECTED OUTPUT
+	//  orange green
+	// ---------------------------------------------------------
+
+	// UNCOMMENT THE CODE BELOW:
+
+	color, color2 := "red", "blue"
+
+	color, color2 = "orange", "green"
+
+	fmt.Println(color, color2)
+
+	// ?
+}
+
+// multi is a function that returns multiple int values
+
+func multi() (int, int) {
+	return 5, 4
 }
