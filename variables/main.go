@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"path"
+)
 
 func main() {
 	//Print a few integer literals
@@ -255,6 +258,44 @@ func main() {
 	fmt.Println(color, color2)
 
 	// ?
+
+	// EXERCISE: Swapper #2
+	//
+	//  1. Swap the values of `red` and `blue` variables
+	//
+	//  2. Print them
+	//
+	// EXPECTED OUTPUT
+	//  blue red
+	// ---------------------------------------------------------
+
+	// UNCOMMENT THE CODE BELOW:
+
+	red, blue := "red", "blue"
+
+	red, blue = blue, red
+
+	fmt.Println(red, blue)
+	// ?
+
+	// EXERCISE: Discard The File
+	//
+	//  1. Print only the directory using `path.Split`
+	//
+	//  2. Discard the file part
+	//
+	// RESTRICTION
+	//  Use short declaration
+	//
+	// EXPECTED OUTPUT
+	//  secret/
+	// ---------------------------------------------------------
+
+	// UNCOMMENT THE CODE BELOW:
+
+	dir, _ := path.Split("secret/file.txt")
+
+	fmt.Println("dir:", dir)
 }
 
 // multi is a function that returns multiple int values
