@@ -161,4 +161,47 @@ how are you?`
 	msg2 := strings.ToLower(value)
 
 	fmt.Println(msg2)
+
+	// ---------------------------------------------------------
+	// EXERCISE: Trim It
+	//
+	//  1. Look at the documentation of strings package
+	//  2. Find a function that trims the spaces from
+	//     the given string
+	//  3. Trim the text variable and print it
+	//
+	// EXPECTED OUTPUT
+	//  The weather looks good.
+	//  I should go and play.
+	// ---------------------------------------------------------
+
+	msg3 := `
+	
+	The weather looks good.
+I should go and play.
+	`
+	fmt.Println(strings.TrimSpace(msg3))
+
+	// EXERCISE: Right Trim It
+	//
+	//  1. Look at the documentation of strings package
+	//  2. Find a function that trims the spaces from
+	//     only the right-most part of the given string
+	//  3. Trim it from the right part only
+	//  4. Print the number of characters it contains.
+	//
+	// RESTRICTION
+	//  Your program should work with unicode string values.
+	//
+	// EXPECTED OUTPUT
+	//  5
+	// ---------------------------------------------------------
+
+	// currently it prints 17
+	// it should print 5
+
+	name1 := "inanç"
+	name1 = strings.TrimRight(name1, " ")
+	l := utf8.RuneCountInString(name1)
+	fmt.Println(l)
 }
