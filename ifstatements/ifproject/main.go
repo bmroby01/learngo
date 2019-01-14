@@ -20,6 +20,10 @@ func main() {
 		fmt.Printf("Access granted to %q.\n", username)
 	} else if username == "brianna" && password != "1234" {
 		fmt.Printf("Invalid password for %q.\n", username)
+	} else if username == "jack" && password == "3456" {
+		fmt.Printf("Access granted to %q.\n", username)
+	} else if username == "jack" && password != "3456" {
+		fmt.Printf("Invalid password for %q.\n", username)
 	} else {
 		fmt.Printf("Access denied for %q.\n", username)
 	}
