@@ -141,6 +141,7 @@ func main() {
 	fmt.Println("int8 value is :", int8(val2))
 
 	// 2. Get an int32 value using ParseInt and convert it and print it
+	val3, _ := strconv.ParseInt(os.Args[2])
 
 	// 3. Get an int64 value using ParseInt and convert it and print it
 
