@@ -34,7 +34,7 @@ func main() {
 	yards := math.Round(feet * feetInYards)
 
 	if err != nil {
-		fmt.Printf("%q is not a number.\n", arg)
+		fmt.Printf("error: %q is not a number.\n", arg)
 		return
 	}
 
