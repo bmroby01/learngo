@@ -20,7 +20,7 @@ func main() {
 		{"happy", "excited", "overjoyed", "elated"},
 		{"sad", "tired", "mad", "terible"},
 	}
-
+ 
 	rand.Seed(time.Now().UnixNano())
 	n := rand.Intn(len(moods[0]))
 
